@@ -1,0 +1,63 @@
+.map,
+.map-base {
+  height: 50vh;
+}
+
+.map-point {
+  width: 400px;
+  overflow: hidden;
+
+  h2 {
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+  }
+
+  p,
+  ul,
+  h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+
+  p {
+    margin: 0.2em 0;
+  }
+
+
+  ul {
+    padding: 0 0 0 1.4em;
+    margin: 0;
+  }
+}
+
+.point-image {
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  text-indent: 100%;
+  color: transparent;
+  background-position: center;
+  background-size: cover;
+}
+
+.point-content {
+  float: left;
+  width: 250px;
+  padding-left: 1em;
+}
+
+.icon-point {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: red;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    background-color: orange;
+  }
+}
