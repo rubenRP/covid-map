@@ -13,18 +13,6 @@ const CENTER = [LOCATION.lat, LOCATION.lng]
 const DEFAULT_ZOOM = 2
 
 class InfoMap extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      countries: [],
-      maxCases: 0,
-    }
-  }
-  componentDidMount = () => {
-    getAllCountriesInfo().then(countries => {
-      this.setState({ countries: countries, maxCases: countries[0].cases })
-    })
-  }
   render() {
     const mapSettings = {
       center: CENTER,
@@ -33,7 +21,8 @@ class InfoMap extends Component {
     }
 
     const MarkerList = () => {
-      const { countries, maxCases } = this.state
+      const { countries } = this.props
+      const maxCases = countries.lenght ? countries[0].cases : 0
       return countries.map(country => {
         const markerIcon = L.divIcon({
           className: "icon",
