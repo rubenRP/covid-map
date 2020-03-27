@@ -22,12 +22,16 @@ class InfoMap extends Component {
 
     const MarkerList = () => {
       const { countries } = this.props
-      const maxCases = countries.lenght ? countries[0].cases : 0
+      const maxCases = countries.length ? countries[0].cases : 0
       return countries.map(country => {
+        const iconSize =
+          60 * (country.cases / maxCases) <= 10
+            ? 10
+            : 60 * (country.cases / maxCases)
         const markerIcon = L.divIcon({
           className: "icon",
           html: `<span class="icon-point"></span>`,
-          iconSize: 20,
+          iconSize: iconSize,
         })
 
         return (

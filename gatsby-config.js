@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `COVID19`,
-    description: ``,
+    title: `COVID19 Info App`,
+    description: `Web app that show the global impact of the COVID19 virus with stats and more.`,
     author: `@_rubenr`,
   },
   plugins: [
