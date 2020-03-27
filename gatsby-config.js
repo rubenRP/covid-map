@@ -34,5 +34,11 @@ module.exports = {
         includePaths: ["src/scss/bootstrap"],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-156169940-2",
+      },
+    },
   ],
 }
