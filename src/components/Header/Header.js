@@ -2,10 +2,12 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Image from "../Image/Image"
+
 const Header = ({ siteTitle }) => (
   <header className="navbar navbar-expand-lg navbar-dark bg-dark">
     <Link to="/" className="navbar-brand">
-      {siteTitle}
+      <span>{siteTitle}</span>
     </Link>
     <button
       class="navbar-toggler"
