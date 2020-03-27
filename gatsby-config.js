@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `COVID19 Status Map`,
+    title: `COVID19`,
     description: ``,
     author: `@_rubenr`,
   },
@@ -28,6 +28,11 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-leaflet",
-    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: ["src/scss/bootstrap"],
+      },
+    },
   ],
 }

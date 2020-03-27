@@ -26,18 +26,21 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+      <div>
+        <main className="container">{children}</main>
+
+        <footer className="footer bg-light p-3 mt-2 text-center small">
+          <div class="container">
+            © Rubén Rodríguez {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            {" "}
+            Using{" "}
+            <a href="https://covid-19-apis.postman.com">
+              Postman COVID-19 resources
+            </a>{" "}
+            and deployed with <a href="http://netlify.com/">Netlify</a>{" "}
+          </div>
         </footer>
       </div>
     </>
