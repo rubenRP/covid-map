@@ -33,12 +33,12 @@ const Layout = ({ children }) => {
           <div class="container">
             © Rubén Rodríguez {new Date().getFullYear()} | Built with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a> Using{" "}
-            <a href="https://covid-19-apis.postman.com">
+            <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a> Using{" "}
+            <a href="https://covid-19-apis.postman.com" target="_blank">
               Postman COVID-19 resources
             </a>{" "}
-            and deployed with <a href="http://netlify.com/">Netlify</a> |{" "}
-            <a href="https://github.com/rubenRP/covid-map">Contribute</a>
+            and deployed with <a href="http://netlify.com/" target="_blank">Netlify</a> |{" "}
+            <a href="https://github.com/rubenRP/covid-map" target="_blank">Contribute</a>
           </div>
         </footer>
       </div>
