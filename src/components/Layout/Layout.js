@@ -31,13 +31,14 @@ const Layout = ({ children }) => {
 
         <footer className="footer bg-light p-3 mt-2 text-center small">
           <div class="container">
-            © Rubén Rodríguez {new Date().getFullYear()}, Built with
+            © Rubén Rodríguez {new Date().getFullYear()} | Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a> Using{" "}
             <a href="https://covid-19-apis.postman.com">
               Postman COVID-19 resources
             </a>{" "}
-            and deployed with <a href="http://netlify.com/">Netlify</a>{" "}
+            and deployed with <a href="http://netlify.com/">Netlify</a> |{" "}
+            <a href="https://github.com/rubenRP/covid-map">Contribute</a>
           </div>
         </footer>
       </div>
