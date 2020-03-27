@@ -52,22 +52,20 @@ class InfoMap extends Component {
                 <img src={country.countryInfo.flag} className="card-img-top" />
                 <div className="card-body">
                   <h5 className="card-title">{country.country}</h5>
-                  <div className="card-text">
-                    <ul>
-                      <li>
-                        <strong>Total cases:</strong> {country.cases}
-                      </li>
-                      <li>
-                        <strong>Active cases:</strong> {country.active}
-                      </li>
-                      <li>
-                        <strong>Deaths:</strong> {country.deaths}
-                      </li>
-                      <li>
-                        <strong>Recovered:</strong> {country.recovered}
-                      </li>
-                    </ul>
-                  </div>
+                  <p className="card-text">
+                    <div>
+                      <strong>Total cases:</strong> {country.cases}
+                    </div>
+                    <div>
+                      <strong>Active cases:</strong> {country.active}
+                    </div>
+                    <div>
+                      <strong>Deaths:</strong> {country.deaths}
+                    </div>
+                    <div>
+                      <strong>Recovered:</strong> {country.recovered}
+                    </div>
+                  </p>
                 </div>
               </div>
             </Popup>
