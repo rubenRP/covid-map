@@ -4,10 +4,9 @@ import { getAllCountriesInfo } from "../api/covid"
 
 import Layout from "../components/Layout/Layout"
 import SEO from "../components/Seo/Seo"
-import InfoMap from "../components/InfoMap/InfoMap"
 import Table from "../components/Table/Table"
 
-class IndexPage extends Component {
+class SecondPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -23,19 +22,18 @@ class IndexPage extends Component {
     const { countries } = this.state
     return (
       <Layout>
-        <SEO title="Home" />
-        <h1 className="mt-5 mb-4">COVID19 Updated Info</h1>
+        <SEO title="COVID-19 Detailed Report (Updated)" />
+        <h1 className="mt-5 mb-4">
+          COVID-19 Detailed Report <small>(Updated)</small>
+        </h1>
         <div className="row">
           <div className="col-12">
-            <InfoMap countries={countries} />
-          </div>
-          <div className="col-12 mt-5">
-            <h2>Top 15 infected countries overview</h2>
-            <Table countries={countries.slice(0, 15)} />
+            <Table countries={countries} />
           </div>
         </div>
       </Layout>
     )
   }
 }
-export default IndexPage
+
+export default SecondPage

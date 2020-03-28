@@ -22,17 +22,16 @@ const Header = ({ siteTitle }) => (
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <Link to="/" className="nav-link">
             Home <span class="sr-only">(current)</span>
           </Link>
         </li>
-        {/* <li class="nav-item">
-        <Link to="/page-2/" class="nav-link">
-          
-            Detailed report
-            </Link>
-        </li> */}
+        <li className="nav-item">
+          <Link to="/detailed-report/" className="nav-link">
+            Detailed Report
+          </Link>
+        </li>
       </ul>
     </div>
   </header>

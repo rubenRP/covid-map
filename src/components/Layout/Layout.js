@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../Header/Header"
+import Footer from "../Footer/Footer"
 import "../../styles/styles.scss"
 
 const Layout = ({ children }) => {
@@ -28,19 +29,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main className="container">{children}</main>
-
-        <footer className="footer bg-light p-3 mt-2 text-center small">
-          <div class="container">
-            © Rubén Rodríguez {new Date().getFullYear()} | Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a> Using{" "}
-            <a href="https://covid-19-apis.postman.com" target="_blank">
-              Postman COVID-19 resources
-            </a>{" "}
-            and deployed with <a href="http://netlify.com/" target="_blank">Netlify</a> |{" "}
-            <a href="https://github.com/rubenRP/covid-map" target="_blank">Contribute</a>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   )
