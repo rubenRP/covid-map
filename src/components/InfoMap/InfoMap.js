@@ -3,8 +3,6 @@ import L from "leaflet"
 
 import { Map, Marker, Popup, TileLayer } from "react-leaflet"
 
-import { getAllCountriesInfo } from "../../api/covid"
-
 const LOCATION = {
   lat: 40.416775,
   lng: -3.70379,
@@ -25,9 +23,9 @@ class InfoMap extends Component {
       const maxCases = countries.length ? countries[0].cases : 0
       return countries.map(country => {
         const iconSize =
-          60 * (country.cases / maxCases) <= 10
-            ? 10
-            : 60 * (country.cases / maxCases)
+          80 * (country.cases / maxCases) <= 8
+            ? 8
+            : 80 * (country.cases / maxCases)
         const markerIcon = L.divIcon({
           className: "icon",
           html: `<span class="icon-point"></span>`,

@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item ">
           <Link to="/" className="nav-link">
             Home <span class="sr-only">(current)</span>
           </Link>
@@ -30,6 +30,11 @@ const Header = ({ siteTitle }) => (
         <li className="nav-item">
           <Link to="/detailed-report/" className="nav-link">
             Detailed Report
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/about/" className="nav-link">
+            About
           </Link>
         </li>
       </ul>

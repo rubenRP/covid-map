@@ -24,7 +24,13 @@ class IndexPage extends Component {
     return (
       <Layout>
         <SEO title="Home" />
-        <h1 className="mt-5 mb-4">COVID19 Updated Info</h1>
+        <div className="jumbotron mt-5 mb-4">
+          <h1 className="display-4">COVID-19</h1>
+          <p className="lead">
+          COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019.
+          </p>
+        </div>
+        <h1 className="mt-5 mb-4">Updated Map</h1>
         <div className="row">
           <div className="col-12">
             <InfoMap countries={countries} />
