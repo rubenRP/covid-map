@@ -11,8 +11,6 @@ const TableRow = ({ countries }) => {
         <td>{country.cases}</td>
         <td>{country.deaths}</td>
         <td>{country.recovered}</td>
-        <td>{country.todayCases}</td>
-        <td>{country.todayDeaths}</td>
       </tr>
     )
   })
@@ -28,8 +26,6 @@ const Table = ({ countries }) => (
           <th scope="col">Total</th>
           <th scope="col">Deaths</th>
           <th scope="col">Recovered</th>
-          <th scope="col">Today Cases</th>
-          <th scope="col">Today Deaths</th>
         </tr>
       </thead>
       <tbody>
